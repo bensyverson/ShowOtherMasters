@@ -55,8 +55,7 @@ class ShowOtherMasters : NSObject, GlyphsReporter {
 	
 	func drawForegroundForLayer(Layer: GSLayer!)
 	{
-		let fadedColor = NSColor(white: 0.0, alpha: 0.2)
-		fadedColor.set()
+		NSColor(white:0.5, alpha:0.2).set()
 		
 		if let allLayers = Layer.parent?.layers?.allValues() {
 			for aLayer : AnyObject in allLayers {
