@@ -10,19 +10,21 @@
 		B52496031963DF1F00E9D123 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52496021963DF1F00E9D123 /* Cocoa.framework */; };
 		B52496081963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = B52496071963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch */; };
 		B524960A1963DF1F00E9D123 /* ShowOtherMasters-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B52496091963DF1F00E9D123 /* ShowOtherMasters-Info.plist */; };
-		B524960D1963DF1F00E9D123 /* ShowOtherMasters.m in Sources */ = {isa = PBXBuildFile; fileRef = B524960C1963DF1F00E9D123 /* ShowOtherMasters.m */; };
 		B524960F1963DF1F00E9D123 /* GlyphsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B524960E1963DF1F00E9D123 /* GlyphsCore.framework */; };
+		B52496171963DF3400E9D123 /* ShowOtherMasters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52496161963DF3400E9D123 /* ShowOtherMasters.swift */; };
+		B524961A1963E12700E9D123 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B524961C1963E12700E9D123 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B52495FF1963DF1F00E9D123 /* ShowOtherMasters.glyphsPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowOtherMasters.glyphsPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52495FF1963DF1F00E9D123 /* ShowOtherMasters.glyphsReporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowOtherMasters.glyphsReporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52496021963DF1F00E9D123 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		B52496061963DF1F00E9D123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B52496071963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShowOtherMasters-Prefix.pch"; sourceTree = "<group>"; };
 		B52496091963DF1F00E9D123 /* ShowOtherMasters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShowOtherMasters-Info.plist"; sourceTree = "<group>"; };
-		B524960B1963DF1F00E9D123 /* ShowOtherMasters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowOtherMasters.h; sourceTree = "<group>"; };
-		B524960C1963DF1F00E9D123 /* ShowOtherMasters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowOtherMasters.m; sourceTree = "<group>"; };
 		B524960E1963DF1F00E9D123 /* GlyphsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GlyphsCore.framework; path = /Applications/Glyphs.app/Contents/Frameworks/GlyphsCore.framework; sourceTree = "<absolute>"; };
+		B52496151963DF3300E9D123 /* ShowOtherMasters-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShowOtherMasters-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		B52496161963DF3400E9D123 /* ShowOtherMasters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowOtherMasters.swift; sourceTree = "<group>"; };
+		B524961B1963E12700E9D123 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,7 @@
 		B52496001963DF1F00E9D123 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B52495FF1963DF1F00E9D123 /* ShowOtherMasters.glyphsPlugin */,
+				B52495FF1963DF1F00E9D123 /* ShowOtherMasters.glyphsReporter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,8 +70,8 @@
 			children = (
 				B52496071963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch */,
 				B52496091963DF1F00E9D123 /* ShowOtherMasters-Info.plist */,
-				B524960B1963DF1F00E9D123 /* ShowOtherMasters.h */,
-				B524960C1963DF1F00E9D123 /* ShowOtherMasters.m */,
+				B52496151963DF3300E9D123 /* ShowOtherMasters-Bridging-Header.h */,
+				B52496161963DF3400E9D123 /* ShowOtherMasters.swift */,
 				B52496051963DF1F00E9D123 /* Supporting Files */,
 			);
 			path = ShowOtherMasters;
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				B52496061963DF1F00E9D123 /* Info.plist */,
+				B524961C1963E12700E9D123 /* Localizable.strings */,
 				B524960E1963DF1F00E9D123 /* GlyphsCore.framework */,
 			);
 			name = "Supporting Files";
@@ -101,7 +104,7 @@
 			);
 			name = ShowOtherMasters;
 			productName = ShowOtherMasters;
-			productReference = B52495FF1963DF1F00E9D123 /* ShowOtherMasters.glyphsPlugin */;
+			productReference = B52495FF1963DF1F00E9D123 /* ShowOtherMasters.glyphsReporter */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B524960A1963DF1F00E9D123 /* ShowOtherMasters-Info.plist in Resources */,
+				B524961A1963E12700E9D123 /* Localizable.strings in Resources */,
 				B52496081963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,11 +156,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B524960D1963DF1F00E9D123 /* ShowOtherMasters.m in Sources */,
+				B52496171963DF3400E9D123 /* ShowOtherMasters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B524961C1963E12700E9D123 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B524961B1963E12700E9D123 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B52496101963DF1F00E9D123 /* Debug */ = {
@@ -192,8 +207,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -224,31 +241,42 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
 		B52496131963DF1F00E9D123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SYSTEM_APPS_DIR)/Glyphs.app/Contents/Frameworks";
 				INFOPLIST_FILE = ShowOtherMasters/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = glyphsPlugin;
+				SWIFT_OBJC_BRIDGING_HEADER = "ShowOtherMasters-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = glyphsReporter;
 			};
 			name = Debug;
 		};
 		B52496141963DF1F00E9D123 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SYSTEM_APPS_DIR)/Glyphs.app/Contents/Frameworks";
 				INFOPLIST_FILE = ShowOtherMasters/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = glyphsPlugin;
+				SWIFT_OBJC_BRIDGING_HEADER = "ShowOtherMasters-Bridging-Header.h";
+				WRAPPER_EXTENSION = glyphsReporter;
 			};
 			name = Release;
 		};
@@ -271,6 +299,7 @@
 				B52496141963DF1F00E9D123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
