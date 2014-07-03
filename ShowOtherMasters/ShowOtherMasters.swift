@@ -48,23 +48,33 @@ class ShowOtherMasters : NSObject, GlyphsReporter {
 		_controller = Controller
 	}
 	
-	func drawBackgroundForLayer(Layer: GSLayer!)
+	func drawBackgroundForLayer(Layer: GSLayer?)
 	{
 		
 	}
 	
-	func drawForegroundForLayer(Layer: GSLayer!)
+	func drawForegroundForLayer(Layer: GSLayer?)
 	{
 		NSColor(white:0.5, alpha:0.2).set()
-		
-		if let allLayers = Layer.parent?.layers?.allValues() {
-			for aLayer : AnyObject in allLayers {
+		if let allLayers = Layer?.parent?.layers? {
+			for aLayer : AnyObject in allLayers.allValues() {
 				if let myLayer = aLayer as? GSLayer {
-					myLayer.bezierPath.fill()
+					if myLayer.paths?.count > 0 {
+						if let bezierPath = myLayer.bezierPath as NSBezierPath? {
+							bezierPath.fill()
+						}
+					}
+					if myLayer.components?.count > 0 {
+						for aComponent : AnyObject in myLayer.components {
+							if let myComponent = aComponent as? GSComponent {
+								myComponent.bezierPath()?.fill()
+							}
+						}
+					}
 				}
 			}
 		}
-		
 	}
+	
 }
 
