@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44740FB61F39CC6300E5FE64 /* ShowOtherMasters.m in Sources */ = {isa = PBXBuildFile; fileRef = 44740FB51F39CC6300E5FE64 /* ShowOtherMasters.m */; };
 		B52496031963DF1F00E9D123 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52496021963DF1F00E9D123 /* Cocoa.framework */; };
 		B52496081963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = B52496071963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch */; };
 		B524960A1963DF1F00E9D123 /* ShowOtherMasters-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B52496091963DF1F00E9D123 /* ShowOtherMasters-Info.plist */; };
 		B524960F1963DF1F00E9D123 /* GlyphsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B524960E1963DF1F00E9D123 /* GlyphsCore.framework */; };
-		B52496171963DF3400E9D123 /* ShowOtherMasters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52496161963DF3400E9D123 /* ShowOtherMasters.swift */; };
 		B524961A1963E12700E9D123 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B524961C1963E12700E9D123 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44740FB41F39CC6300E5FE64 /* ShowOtherMasters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowOtherMasters.h; sourceTree = "<group>"; };
+		44740FB51F39CC6300E5FE64 /* ShowOtherMasters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowOtherMasters.m; sourceTree = "<group>"; };
 		B52495FF1963DF1F00E9D123 /* ShowOtherMasters.glyphsReporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowOtherMasters.glyphsReporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52496021963DF1F00E9D123 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		B52496061963DF1F00E9D123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B52496071963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShowOtherMasters-Prefix.pch"; sourceTree = "<group>"; };
 		B52496091963DF1F00E9D123 /* ShowOtherMasters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShowOtherMasters-Info.plist"; sourceTree = "<group>"; };
 		B524960E1963DF1F00E9D123 /* GlyphsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GlyphsCore.framework; path = /Applications/Glyphs.app/Contents/Frameworks/GlyphsCore.framework; sourceTree = "<absolute>"; };
-		B52496151963DF3300E9D123 /* ShowOtherMasters-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShowOtherMasters-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		B52496161963DF3400E9D123 /* ShowOtherMasters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowOtherMasters.swift; sourceTree = "<group>"; };
 		B524961B1963E12700E9D123 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,9 +70,9 @@
 			children = (
 				B52496071963DF1F00E9D123 /* ShowOtherMasters-Prefix.pch */,
 				B52496091963DF1F00E9D123 /* ShowOtherMasters-Info.plist */,
-				B52496151963DF3300E9D123 /* ShowOtherMasters-Bridging-Header.h */,
-				B52496161963DF3400E9D123 /* ShowOtherMasters.swift */,
 				B52496051963DF1F00E9D123 /* Supporting Files */,
+				44740FB41F39CC6300E5FE64 /* ShowOtherMasters.h */,
+				44740FB51F39CC6300E5FE64 /* ShowOtherMasters.m */,
 			);
 			path = ShowOtherMasters;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 		B52495F71963DF1F00E9D123 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Ben Syverson";
 				TargetAttributes = {
 					B52495FE1963DF1F00E9D123 = {
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52496171963DF3400E9D123 /* ShowOtherMasters.swift in Sources */,
+				44740FB61F39CC6300E5FE64 /* ShowOtherMasters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +187,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -208,9 +212,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				METAL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = macosx10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -227,14 +230,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -242,8 +248,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				METAL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -258,9 +263,8 @@
 				INSTALL_GROUP = staff;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensyverson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ShowOtherMasters-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = glyphsReporter;
 			};
 			name = Debug;
@@ -276,8 +280,8 @@
 				INSTALL_GROUP = staff;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bensyverson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ShowOtherMasters-Bridging-Header.h";
 				WRAPPER_EXTENSION = glyphsReporter;
 			};
 			name = Release;
